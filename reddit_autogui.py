@@ -57,15 +57,18 @@ def menu():
             "useful_images/reddit_add.png", confidence=0.8)
 
         if (addImg):
+
             # what is needed from this unpacking is just the y coordinate of the images
             xUpvote, yUpvote, height, width = upvoteImg
             xAdd, yAdd, height, width = addImg
 
             # test if the current post is an add
             if yAdd-yUpvote in range(Y_ADD_DIFF-1, Y_ADD_DIFF+2):
+
                 downvoteImg = pg.locateOnScreen(
                     "useful_images/reddit_downvote.png", confidence=0.9)
-                if(downvoteImg):
+                if downvoteImg:
+
                     xDownvote, yDownvote, height, width = downvoteImg
                     if yDownvote-yUpvote in range(Y_VOTE_DIFF-1, Y_VOTE_DIFF+2):
                         """
@@ -74,11 +77,15 @@ def menu():
                         """
                         moveToImg(downvoteImg)
                         pg.click()
+
             elif upvoteImg:
+
                 # when there is an add, but not on the current post the upvote button will be clicked
                 moveToImg(upvoteImg)
                 pg.click()
+
         elif upvoteImg:
+            
             # when there is no add the upvote button will be clicked
             moveToImg(upvoteImg)
             pg.click()
