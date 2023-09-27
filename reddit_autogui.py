@@ -82,7 +82,7 @@ def menu():
             moveToImg(upvoteImg)
             pg.click()
 
-        pg.scroll(-500)
+        pg.scroll(-370)
         time.sleep(1)
         i += 1
 
