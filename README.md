@@ -1,7 +1,7 @@
 ## __Table of contents__
-  - Description
-  - Usage
-  - Gallery
+  - [Description](#description)
+  - [Usage](#usage)
+  - [Gallery](#gallery)
 # __Description__
   Made in Python 3.11.2 using VSCode.
 
