@@ -24,4 +24,8 @@
   - The searching is based on recognising certain .png images that are saved in the directory [useful_images](https://github.com/GabroveanuRazvan/Reddit-auto-upvoter/tree/main/useful_images).
   - __!Important__ Since the script relies on finding certain patterns based on some screenshots images, using this code on diffrent resolution might not work properly. My resolution is __1920x1080__.
   - __!Important__  Pyautogui has a failsafe set by default. Moving the cursor in any of the 4 corners of the main monitor will forcibly stop the program. More details [here](https://pyautogui.readthedocs.io/en/latest/index.html?highlight=failsafe).
- 
+
+# __Gallery__
+
+[reddit_pyautogui_demo.webm](https://github.com/GabroveanuRazvan/Reddit-auto-upvoter/assets/126866447/c7cb390a-5014-4043-be7e-34cd29513ed8)
+
