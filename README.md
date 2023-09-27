@@ -22,4 +22,5 @@
   - There is a 2 second delay after running the code so that the user will have time to open up Reddit. After the delay there will be a prompt message that asks for the number of scrolldowns.
   After this the program will start looking for upvotes/downvotes.
 
-  - The searching is based on recognising certain png images that are saved in ![](useful_images)
+  - The searching is based on recognising certain .png images that are saved in the directory ![useful_images](https://github.com/GabroveanuRazvan/Reddit-auto-upvoter/tree/main/useful_images).
+ 
