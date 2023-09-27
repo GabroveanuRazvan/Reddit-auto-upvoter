@@ -65,14 +65,15 @@ def menu():
             if yAdd-yUpvote in range(Y_ADD_DIFF-1, Y_ADD_DIFF+2):
                 downvoteImg = pg.locateOnScreen(
                     "useful_images/reddit_downvote.png", confidence=0.9)
-                xDownvote, yDownvote, height, width = downvoteImg
-                if downvoteImg and yDownvote-yUpvote in range(Y_VOTE_DIFF-1, Y_VOTE_DIFF+2):
-                    """
-                    the downvote button will be pressed when there is an add on the screen and
-                    when the selected upvote button is the pair of the selected downvote button
-                    """
-                    moveToImg(downvoteImg)
-                    pg.click()
+                if(downvoteImg):
+                    xDownvote, yDownvote, height, width = downvoteImg
+                    if yDownvote-yUpvote in range(Y_VOTE_DIFF-1, Y_VOTE_DIFF+2):
+                        """
+                        the downvote button will be pressed when there is an add on the screen and
+                        when the selected upvote button is the pair of the selected downvote button
+                        """
+                        moveToImg(downvoteImg)
+                        pg.click()
             elif upvoteImg:
                 # when there is an add, but not on the current post the upvote button will be clicked
                 moveToImg(upvoteImg)
@@ -85,6 +86,5 @@ def menu():
         pg.scroll(-370)
         time.sleep(1)
         i += 1
-
 
 menu()
