@@ -39,10 +39,12 @@ def moveToImg(img):
     return False
 
 
-def menu(iterations):
+def menu():
+
+    #the viewer will chose how many scrolldowns(iterations) will be ecevuted
+    iterations=int(pg.prompt("Choose number of scrolldowns: "))
     """
     function that runs the script\n
-    takes an integer as a parameter that gives how many scrolldowns will be executed
     """
     i = 0
 
@@ -85,4 +87,4 @@ def menu(iterations):
         i += 1
 
 
-menu(25)
+menu()
