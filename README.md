@@ -21,6 +21,7 @@
     
   - There is a 2 second delay after running the code so that the user will have time to open up Reddit. After the delay there will be a prompt message that asks for the number of scrolldowns.
   After this the program will start looking for upvotes/downvotes.
-
-  - The searching is based on recognising certain .png images that are saved in the directory ![useful_images](https://github.com/GabroveanuRazvan/Reddit-auto-upvoter/tree/main/useful_images).
+  - The searching is based on recognising certain .png images that are saved in the directory [useful_images](https://github.com/GabroveanuRazvan/Reddit-auto-upvoter/tree/main/useful_images).
+  - __!Important__ Since the script relies on finding certain patterns based on some screenshots images, using this code on diffrent resolution might not work properly. My resolution is __1920x1080__.
+  - __!Important__  Pyautogui has a failsafe set by default. Moving the cursor in any of the 4 corners of the main monitor will forcibly stop the program. More details [here](https://pyautogui.readthedocs.io/en/latest/index.html?highlight=failsafe).
  
