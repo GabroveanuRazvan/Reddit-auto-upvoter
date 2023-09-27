@@ -4,6 +4,12 @@ import keyboard
 time.sleep(2)
 
 """
+current resolution of my system:
+1920x1080
+"""
+
+
+"""
 Constants
 # x.downvote-x.upvote=1
 # y.downvote-y.upvote=64
