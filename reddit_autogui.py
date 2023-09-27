@@ -43,6 +43,7 @@ def menu():
 
     #the viewer will chose how many scrolldowns(iterations) will be ecevuted
     iterations=int(pg.prompt("Choose number of scrolldowns: "))
+    time.sleep(1.5)
     """
     function that runs the script\n
     """
